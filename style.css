@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+body {
+  color: #ffffff;
+  background-color: #000000;
+}
+.container {
+  width: 100%;
+  max-width: 640px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+header h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+header #atualizar {
+  cursor: pointer;
+}
+section {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 90px;
+  overflow-y: auto;
+}
+section #tarefas {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #121214;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+section #tarefas h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+section #tarefas .icons #editar {
+  cursor: pointer;
+  margin-right: 10px;
+}
+section #tarefas .icons #apagar {
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+}
+footer button {
+  width: 100%;
+  max-width: 600px;
+  height: 70px;
+  color: #ffffff;
+  background-color: #5856d6;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
