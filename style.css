@@ -39,7 +39,7 @@ section {
   margin-bottom: 90px;
   overflow-y: auto;
 }
-section #tarefas {
+section .tarefa {
   width: 100%;
   display: flex;
   align-items: center;
@@ -49,15 +49,15 @@ section #tarefas {
   padding: 20px;
   margin-bottom: 20px;
 }
-section #tarefas h2 {
+section .tarefa h2 {
   font-size: 16px;
   font-weight: 500;
 }
-section #tarefas .icons #editar {
+section .tarefa .icons .editar {
   cursor: pointer;
   margin-right: 10px;
 }
-section #tarefas .icons #apagar {
+section .tarefa .icons .apagar {
   cursor: pointer;
 }
 footer {
@@ -80,4 +80,5 @@ footer button {
   margin-bottom: 20px;
   cursor: pointer;
   font-size: 20px;
+  border: none;
 }

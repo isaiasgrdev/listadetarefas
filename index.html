@@ -6,81 +6,22 @@
     <title>lista de tarefas</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="listar()">
     <div class="container">
       <header>
-        <h1>Você possui 14 tarefas</h1>
+        <h1 id="total">Você possui 0 tarefas</h1>
         <img id="atualizar" src="image/atualizar.png" alt="" />
       </header>
-      <section>
-        <div id="tarefas">
-          <h2>Tarefa 1 - Lavar louça</h2>
-          <div class="icons">
-            <img id="editar" src="image/editar.png" alt="" />
-            <img id="apagar" src="image/apagar.png" alt="" />
-          </div>
-        </div>
-        <div id="tarefas">
-          <h2>Tarefa 1 - Lavar louça</h2>
-          <div class="icons">
-            <img id="editar" src="image/editar.png" alt="" />
-            <img id="apagar" src="image/apagar.png" alt="" />
-          </div>
-        </div>
-        <div id="tarefas">
-          <h2>Tarefa 1 - Lavar louça</h2>
-          <div class="icons">
-            <img id="editar" src="image/editar.png" alt="" />
-            <img id="apagar" src="image/apagar.png" alt="" />
-          </div>
-        </div>
-        <div id="tarefas">
-          <h2>Tarefa 1 - Lavar louça</h2>
-          <div class="icons">
-            <img id="editar" src="image/editar.png" alt="" />
-            <img id="apagar" src="image/apagar.png" alt="" />
-          </div>
-        </div>
-        <div id="tarefas">
-          <h2>Tarefa 1 - Lavar louça</h2>
-          <div class="icons">
-            <img id="editar" src="image/editar.png" alt="" />
-            <img id="apagar" src="image/apagar.png" alt="" />
-          </div>
-        </div>
-        <div id="tarefas">
-          <h2>Tarefa 1 - Lavar louça</h2>
-          <div class="icons">
-            <img id="editar" src="image/editar.png" alt="" />
-            <img id="apagar" src="image/apagar.png" alt="" />
-          </div>
-        </div>
-        <div id="tarefas">
-          <h2>Tarefa 1 - Lavar louça</h2>
-          <div class="icons">
-            <img id="editar" src="image/editar.png" alt="" />
-            <img id="apagar" src="image/apagar.png" alt="" />
-          </div>
-        </div>
-        <div id="tarefas">
-          <h2>Tarefa 1 - Lavar louça</h2>
-          <div class="icons">
-            <img id="editar" src="image/editar.png" alt="" />
-            <img id="apagar" src="image/apagar.png" alt="" />
-          </div>
-        </div>
-        <div id="tarefas">
-          <h2>Tarefa 1 - Lavar louça</h2>
-          <div class="icons">
-            <img id="editar" src="image/editar.png" alt="" />
-            <img id="apagar" src="image/apagar.png" alt="" />
-          </div>
-        </div>
+      <section id="tarefas">
+        
       </section>
       <footer>
-        <button>Criar tarefa</button>
+        <button id="criar_tarefa">Criar tarefa</button>
       </footer>
     </div>
     <script src="functions/atualizar.js"></script>
+    <script src="functions/criar.js"></script>
+    <script src="functions/apagar.js"></script>
+    <script src="functions/editar.js"></script>
   </body>
 </html>
