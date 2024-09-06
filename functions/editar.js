@@ -1,5 +1,6 @@
 //função que aciona o poup-up e captura o novo titulo da tarefa
 function novoTitulo(titulo) {
+  let poup_up = document.getElementById('poup-up')
   let html_poup_up = ''
   html_poup_up += `
         <input type="text" placeholder="Digite o novo titulo da tarefa" id="novoTitulo">        
@@ -10,7 +11,11 @@ function novoTitulo(titulo) {
 
   poup_up.innerHTML = html_poup_up
 
-
+  //evento para botão de cancelar fechar o poup-up
+  const cancelar = poup_up.querySelector('.cancelar')
+  cancelar.addEventListener('click', () => {
+    poup_up.innerHTML = ''
+  })
 }
 
 async function editar(titulo) {

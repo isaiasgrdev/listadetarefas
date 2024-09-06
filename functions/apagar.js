@@ -1,13 +1,16 @@
+
+
 //função de acionar poup-up ao clicar em "apagar"
 function confirmacao(titulo) {
   let poup_up = document.getElementById('poup-up')
+
 
   let html_poup_up = ''
   html_poup_up += `
         <h2>Você tem certeza que deseja apagar a tarefa "${titulo}"?</h2>
         <div>
           <button class="confirmar" onclick='apagar("${titulo}")'>Apagar</button>
-          <button class="cancelar" onclick='cancelar("${titulo}")'>Cancelar</button>
+          <button class="cancelar">Cancelar</button>
         </div>`
 
   poup_up.innerHTML = html_poup_up
