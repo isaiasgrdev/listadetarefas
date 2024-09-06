@@ -7,6 +7,8 @@ async function listar() {
   // Capturando os seletores do index.html
   const total = document.getElementById('total')
   const tarefas = document.getElementById('tarefas')
+  const alert = document.querySelector('#alert #h2Alert')
+
 
   // Atualizando o texto do id total para carregando
   total.innerHTML = 'Carregando...'
@@ -27,7 +29,8 @@ async function listar() {
   if (res.ok == false) {
 
     // Retornando a mensagem do erro
-    return window.alert(res.mensagem)
+    alert.style.display = 'flex'
+    return alert.innerText(res.mensagem)
 
   }
 
@@ -54,8 +57,8 @@ async function listar() {
         <div class="tarefa">
           <h2>Tarefa ${contador + 1} - ${tarefa.titulo}</h2>
           <div class="icons">
-            <img class="editar" src="image/editar.png" alt="" onclick="editar('${tarefa.titulo}')" />
-            <img class="apagar" src="image/apagar.png" alt="" onclick="apagar('${tarefa.titulo}')"/>
+            <img class="editar" src="image/editar.png" alt="" onclick="novoTitulo('${tarefa.titulo}')" />
+            <img class="apagar" src="image/apagar.png" alt="" onclick="confirmacao('${tarefa.titulo}')"/>
           </div>
         </div>
       `
@@ -64,6 +67,7 @@ async function listar() {
     // Alterando o html de tarefas com o html_tarefas
     tarefas.innerHTML = html_tarefas
   }
+  alert.innerText = ''
 }
 
 // Capturando o evento de click do botão de atualizar e disparando a função listar

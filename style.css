@@ -17,6 +17,65 @@ body {
   padding: 0 20px;
   margin: 0 auto;
 }
+.container #alert{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+.container #alert h2{
+  color: #5856d6;
+}
+.container #poup-up{
+  width: 100%;
+  background-color: #121214;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+#poup-up .confirmar, .cancelar{
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px;
+}
+#poup-up input{
+  width: 300px;
+  height: 50px;
+  padding-left: 10px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+#poup-up h2{
+  color: black;
+  font-weight: 400;
+  padding: 5px;
+}
+.confirmar{
+  background-color: white;
+  color: green;
+}
+.confirmar:hover{
+  background-color: darkgreen;
+  color: white;
+ }
+.cancelar{
+  background-color: white;
+  color: red;
+}
+.cancelar:hover{
+  background-color: red;
+  color: white;
+}
 header {
   width: 100%;
   display: flex;
